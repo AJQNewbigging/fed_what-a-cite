@@ -80,7 +80,7 @@ body {
     height: 130px;
 }
 
-.project-box .desc {
+.box .desc {
     text-overflow: ellipsis;
 }
 
@@ -91,4 +91,33 @@ body {
 .nav .selected {
     background-color: #DB8E08;
     color: #f1f1f1;
+}
+
+.citation-box {
+    width: 500px;
+    height: 500px;
+}
+
+.box.has-project {
+    color: #0873dd;
+    border-color: #0873dd;
+}
+
+.box.has-project:hover {
+    background-color: #0873dd;
+    color: #f1f1f1;
+}
+
+.box-form.has-project {
+    background-color: #0873dd;
+    color: #f1f1f1;
+}
+
+#citation-creation {
+    display: none;
+}
+
+#citation-creation h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

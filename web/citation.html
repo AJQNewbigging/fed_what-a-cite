@@ -20,17 +20,31 @@
             <h2>What a Cite</h2>
             <p>Citation management</p>
 
+            <form id="project-choice">
+                <select id="project-dropdown" name="projects">
+                    <option value="all">None selected</option>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
+
             <div id="box-list">
-                <form class="box box-form" id="citation-creation">
-                    <label>Create a Citation</label>
-                    <input type="hidden" name="id">
-                    <input type="text" name="title">
-                    <input type="date" name="dueDate">
-                    <textarea name="description"></textarea>
-                    <input type="submit">
-                </form>
             </div>
         </div>
-        <script src="scripts/project.js"></script>
+        <form class="box box-form citation-box" id="citation-creation">
+            <h5>Create a Citation</h5>
+            <label>Title:</label>
+            <input type="text" name="title">
+            <label>Authors:</label>
+            <input type="text" name="authorLine">
+            <label>Year Published:</label>
+            <input type="number" min="1699" step="1" name="yearPublished">
+            <label>Publisher:</label>
+            <input type="text" name="publisher">
+            <label>Abstract:</label>
+            <textarea name="abstrac"></textarea>
+            <input type="submit">
+        </form>
+        <script src="scripts/forms.js"></script>
+        <script src="scripts/citation.js"></script>
     </body>
 </html>
