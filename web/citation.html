@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>What a Cite!</title>
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+    <body>
+        <div class="nav">
+            <img id="logo" src="static/What-a-cite2.png">
+            <ul>
+                <li><a href="./project.html">Projects</a></li>
+                <li><a class="selected" href="./citation.html">Citations</a></li>
+            </ul>
+        </div>
+        
+        <div class="main">
+            <h2>What a Cite</h2>
+            <p>Citation management</p>
+
+            <div id="box-list">
+                <form class="box box-form" id="citation-creation">
+                    <label>Create a Citation</label>
+                    <input type="hidden" name="id">
+                    <input type="text" name="title">
+                    <input type="date" name="dueDate">
+                    <textarea name="description"></textarea>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+        <script src="scripts/project.js"></script>
+    </body>
+</html>

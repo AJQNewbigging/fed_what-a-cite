@@ -1,0 +1,94 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: antiquewhite;
+    padding-top: 20px;
+}
+  
+.nav a {
+    padding: 6px ;
+    text-decoration: none;
+    font-size: 20px;
+    color: #DB8E08;
+    display: block;
+    text-align: center;
+}
+  
+.nav a:hover {
+    color: #f1f1f1;
+    background-color: #DB8E08;
+}
+
+.nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.main {
+    margin-left: 200px;
+    padding-top: 20px;
+}
+
+#logo {
+    width: 200px;
+}
+
+#box-list {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    border-style: ridge;
+    border-color: #DB8E08;
+    padding: 10px 20px;
+    color: #DB8E08;
+    text-decoration: none;
+}
+
+.box:hover {
+    background-color: #DB8E08;
+    color: #f1f1f1;
+}
+
+.box-form {
+    background-color: #DB8E08;
+    color: #f1f1f1;
+}
+
+.box-form input {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.box-form textarea {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 130px;
+}
+
+.project-box .desc {
+    text-overflow: ellipsis;
+}
+
+.delete-button {
+    width: 100%;
+}
+
+.nav .selected {
+    background-color: #DB8E08;
+    color: #f1f1f1;
+}
